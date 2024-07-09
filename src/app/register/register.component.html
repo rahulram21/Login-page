@@ -1,6 +1,9 @@
 <div class="page-container">
     <div class="signup-container">
         <h1>Sign-Up</h1>
+        @if(errorMessage){
+            <p class="errorMessage">{{errorMessage}}</p>
+        }
         <div class="loginInputs">
             <form [formGroup]="signupForm" (ngSubmit)="onSubmit()">
                 <label for="email">Email</label>
