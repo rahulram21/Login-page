@@ -1,0 +1,17 @@
+<div class="page-container">
+    <div class="login-container">
+        <h1>Login</h1>
+        <div class="loginInputs">
+            <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+                <label for="name">Username</label>
+                <input id="username" placeholder="Username" formControlName="username"/>
+                <label for="password">Password</label>
+                <input id="password" type="password" placeholder="Password" formControlName="password"/>
+                <button type="submit">Sign In</button>
+                <button routerLink="/register">Create account</button>
+                
+            </form>
+            
+        </div>
+    </div>
+</div>
